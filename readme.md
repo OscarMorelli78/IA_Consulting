@@ -27,7 +27,11 @@ Las empresas actuales sufren de:
 - **Data & Cache:** PostgreSQL (pgvector), Redis
 - **Observability:** OpenTelemetry (Tracing & Metrics)
 
+## Demo de caché exacta
+
+Ejecuta `python demo_cache.py` con Python 3, sin dependencias. La prueba compara cinco solicitudes sintéticas con y sin caché exacta. Una solicitud idéntica de otro equipo provoca una llamada independiente. La métrica muestra llamadas evitadas y tokens simulados. El ahorro real y la caché semántica siguen pendientes de validación.
+
 ## Roadmap & Scalability
 Arquitectura desacoplada propuesta. Kubernetes y alta disponibilidad quedan fuera del MVP. Primero validar coste por solicitud, tasa de aciertos de caché, calidad de respuestas y aislamiento entre tenants.
 
-> **Estado:** concepto de producto; este repositorio no contiene una implementación ejecutable ni resultados de benchmark.
+> **Estado:** concepto de producto; incluye una demostración local de caché exacta. El middleware de producción y su benchmark quedan pendientes.
