@@ -3,7 +3,7 @@
 ## BLUF (Bottom Line Up Front)
 Middleware de inferencia agnóstico diseñado para reducir costes de LLM en entornos empresariales mediante caching semántico y enrutamiento inteligente. 
 
-**Logro esperado:** Reducción ≥ 30% en el consumo mensual de tokens en arquitecturas de producción.
+**Hipótesis de diseño (no medida):** Reducción ≥ 30% en el consumo mensual de tokens en arquitecturas de producción.
 
 ## Arquitectura de Sistema
 
@@ -27,4 +27,4 @@ Las empresas actuales sufren de:
 ## Roadmap & Scalability
 *Desarrollado con arquitectura desacoplada para despliegue en K8s con alta disponibilidad.*
 
-> **Nota:** La lógica del motor de ruteo y optimización se encuentra en módulos privados por motivos de propiedad intelectual. Documentación técnica detallada disponible en `docs/ARCHITECTURE.md`.
+> **Estado:** concepto de producto; este repositorio no contiene una implementación ejecutable ni resultados de benchmark.
