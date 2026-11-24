@@ -5,8 +5,11 @@ Middleware de inferencia agnóstico diseñado para reducir costes de LLM en ento
 
 **Hipótesis de diseño (no medida):** Reducción ≥ 30% en el consumo mensual de tokens en arquitecturas de producción.
 
-## Arquitectura de Sistema
+## Arquitectura propuesta (no implementada)
 
+Cliente → autenticación y políticas → presupuesto por tenant → control de PII → caché autorizada → adaptador LLM → métricas y auditoría.
+
+La caché debe aislar tenants y evitar reutilizar datos sensibles sin autorización. El sistema debe abstenerse ante clasificación incierta.
 
 ## Problemática Resuelta
 Las empresas actuales sufren de:
@@ -25,6 +28,6 @@ Las empresas actuales sufren de:
 - **Observability:** OpenTelemetry (Tracing & Metrics)
 
 ## Roadmap & Scalability
-*Desarrollado con arquitectura desacoplada para despliegue en K8s con alta disponibilidad.*
+Arquitectura desacoplada propuesta. Kubernetes y alta disponibilidad quedan fuera del MVP. Primero validar coste por solicitud, tasa de aciertos de caché, calidad de respuestas y aislamiento entre tenants.
 
 > **Estado:** concepto de producto; este repositorio no contiene una implementación ejecutable ni resultados de benchmark.
